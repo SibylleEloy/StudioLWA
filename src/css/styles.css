@@ -21,22 +21,19 @@ body {
 }
 
 header h1 {
-	font-size: 24px;
+	font-size: 18px;
 	text-align: center;
-	padding-top: 2em;
+	padding-top: 1em;
 }
 
-.clip {
+.pinkclip {
 	position: absolute;
-	top: 0;
-	height: 300px;
-	width: 300px;
-	background-color:#F5AC9C;
-	clip-path: polygon(35% 0, 52% 0, 0 82%, 0 56%);
+	top: -30px;
+    left: -55px;
 }
 
 h2 {
-	font-size: 18px;
+	font-size: 16px;
 	text-transform: uppercase;
 	text-align: center;
 	padding-top: 3em;
@@ -52,6 +49,7 @@ h2 {
 }
 
 .mySlides {
+	z-index: 999;
 	border: 1px solid #F0F6FD;
 	margin: 2em;
 }
@@ -69,6 +67,12 @@ h2 {
 
 .mySlides img {
 	width: 100%;
+}
+
+.circleplus {
+	display: block;
+	margin: auto;
+	margin-bottom: 2em;
 }
 
 /* Hide the images by default */
