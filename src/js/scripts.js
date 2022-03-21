@@ -1,27 +1,62 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+// Owl Carousel
+// Initialization of Owl carousel function
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
+// $('.mySlides').owlCarousel({
+//   autoplay: true,
+//   autoplayhoverpause: true,
+//   autoplaytimeout: 100,
+// });
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
+// $('.owl-carousel').owlCarousel({
+//   autoplay: true,
+//   autoplayhoverpause: true,
+//   autoplaytimeout: 100,
+// });
 
-function showSlides(n) {
-  let i;
-  const slides = document.getElementsByClassName('mySlides');
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
-  }
-  slides[slideIndex - 1].style.display = 'block';
-}
+// (function ($) {
+//   function initOwlCarousel() {
+//     $('.owl-carousel').owlCarousel();
+//   }
+
+//   $(document).ready(() => {
+//     initOwlCarousel();
+//   });
+// })(jQuery);
+// $('.owl-carousel').owlCarousel({
+//     loop:true,
+//     margin:10,
+//     nav:true,
+//     responsive:{
+//         0:{
+//             items:1
+//         },
+//         600:{
+//             items:2
+//         },
+//         1000:{
+//             items:5
+//         }
+//     }
+// })
+
+jQuery(document).ready(function() {
+  jQuery(".owl-carousel").owlCarousel({
+    // autoplay: true,
+    // autoplayhoverpause: true,
+    // autoplaytimeout: 100,
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:5
+        }
+    }
+  });
+});

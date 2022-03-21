@@ -53,47 +53,48 @@ h2 {
 
 /* Slideshow container */
 
-.slideshow {
+.slider  {
   display: flex;
-  justify-content: space-evenly;
   margin: auto;
   height: 750px;
+  width: 370px;
 }
 
-.mySlides {
+.owl-carousel .mySlides {
 	z-index: 999;
 	border: 1px solid #F0F6FD;
 	margin: 2em;
+	height: 750px;
 }
 
-.fade__text {
+.owl-carousel .fade__text {
 	text-align: center;
 	padding-top: 1em;
 	text-transform: uppercase;
 }
 
-.fade__number {
+.owl-carousel .fade__number {
 	border-bottom: 1px solid #F0F6FD;
 	margin: 0 8em;
 }
 
-.mySlides img {
+.owl-carousel .mySlides img {
 	width: 100%;
 }
 
-.circleplus {
+.owl-carousel .circleplus {
 	display: block;
 	margin: auto;
 	margin-bottom: 2em;
 }
 
-/* Hide the images by default */
+/* Hide the images by default
 .mySlides {
   display: none;
 }
 
 /* Next & previous buttons */
-.prev, .next {
+/* .prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -106,21 +107,21 @@ h2 {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-}
+} */
 
 /* Position the "next button" to the right */
-.next {
+/* .next {
   right: 0;
   border-radius: 3px 0 0 3px;
-}
+} */
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+/* .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
-}
+} */
 
 /* Fading animation */
-.fade {
+/* .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
@@ -135,4 +136,6 @@ h2 {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
-}
+} */
+
+/* CSS Scroll-Linked Animations */
