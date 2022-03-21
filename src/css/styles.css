@@ -26,6 +26,13 @@ header h1 {
 	padding-top: 1em;
 }
 
+.clip {
+	position: absolute;
+	z-index: 10;
+	transform-origin: 0 50%;
+	transform: rotate(90);
+}
+
 .pinkclip {
 	position: absolute;
 	top: -30px;
@@ -88,6 +95,31 @@ h2 {
 	margin-bottom: 2em;
 }
 
+/* CSS Scroll-Linked Animations */
+
+/* @keyframes clip-animated {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(90);
+  }
+}
+
+.clip {
+  animation: 1s linear forwards clip-animated;
+}
+
+@scroll-timeline scroll-in-document-timeline {
+  source: auto;
+  orientation: horizontal;
+  scroll-offsets: 0%, 100%;
+} */
+
+
+/* _____________________ */
+
+/* Classic slider */
 /* Hide the images by default
 .mySlides {
   display: none;
@@ -137,5 +169,3 @@ h2 {
   from {opacity: .4}
   to {opacity: 1}
 } */
-
-/* CSS Scroll-Linked Animations */
